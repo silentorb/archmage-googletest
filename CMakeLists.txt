@@ -1,2 +1,2 @@
 cmake_minimum_required(VERSION 3.6)
-create_header_library(external/googletest)
+create_header_library(googletest)
