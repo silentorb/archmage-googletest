@@ -1,6 +1,0 @@
-{
-  "name": "googletest",
-  "url": "git@github.com:silentorb/archmage-googletest.git",
-  "version": "1.0",
-  "install": "cmake"
-}

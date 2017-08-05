@@ -7,7 +7,5 @@ ExternalProject_Add(googletest
   CMAKE_ARGS
   -DCMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}
   -DBUILD_GTEST=ON -DBUILD_GMOCK=OFF
-#  -Dgtest_disable_pthreads=ON
-#  -Dgtest_force_shared_crt=ON
   -DBUILD_SHARED_LIBS=ON
   )

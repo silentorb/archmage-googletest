@@ -16,9 +16,7 @@ target_link_libraries(${CURRENT_TARGET} "${lib_dir}/${gtest_main}")
 
 if (MSVC) # Compiled shared.
   add_custom_command(TARGET ${CURRENT_TARGET} POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy ${lib_dir}/${gtest.dll} $<TARGET_FILE_DIR:${CURRENT_TARGET}>
-    )
-  add_custom_command(TARGET ${CURRENT_TARGET} POST_BUILD
-    COMMAND ${CMAKE_COMMAND} -E copy ${lib_dir}/${gtest_main.dll} $<TARGET_FILE_DIR:${CURRENT_TARGET}>
+    COMMAND ${CMAKE_COMMAND} -E copy ${lib_dir}/gtest.dll $<TARGET_FILE_DIR:${CURRENT_TARGET}>
+    COMMAND ${CMAKE_COMMAND} -E copy ${lib_dir}/gtest_main.dll $<TARGET_FILE_DIR:${CURRENT_TARGET}>
     )
 endif ()
